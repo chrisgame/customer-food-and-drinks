@@ -5,6 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'customer-food-and-drinks',
     environment,
     rootURL: '/',
+    customerURL: 'https://gist.githubusercontent.com/brianw/19896c50afa89ad4dec3/raw/6c11047887a03483c50017c1d451667fd62a53ca/gistfile1.txt',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
