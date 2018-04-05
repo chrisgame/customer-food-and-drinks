@@ -47,6 +47,7 @@ module('Unit | Service | distance', function(hooks) {
         );
       }
     });
+
     test('longitude outside upper limit', function(assert) {
       let invalidPositiveLongitude = { latitude: 90, longitude: 181 };
 
@@ -61,6 +62,7 @@ module('Unit | Service | distance', function(hooks) {
         );
       }
     });
+
     test('latitude outside lower limit', function(assert) {
       let invalidNegativeLatitude = { latitude: -91, longitude: -180 };
 
@@ -75,6 +77,7 @@ module('Unit | Service | distance', function(hooks) {
         );
       }
     });
+
     test('longitude outside lower limit', function(assert) {
       let invalidNegativeLongitude = { latitude: -90, longitude: -181 };
 
