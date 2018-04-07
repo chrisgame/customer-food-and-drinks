@@ -1,7 +1,14 @@
 # customer-food-and-drinks
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+I have documented any decisions i thought worth mentioning in the relevant commit. The commit history is quite verbose, i would probably squash a few of these commits before merging if this was a PR. I have left it as it is here as it gives a good idea of my workflow.
+
+I have used the location and range provided as defaults but given the option to change them. This was trivial to do but makes the tool much more reuasble.
+
+Next steps would be to add some styling and maybe a map! But i think this has everything that was communicated in the requirements.
+
+This was fun to make, i hope you like it.
+
+One thing to note, make sure you run it with `ember s -e production`. If you spin it up with just `ember s` you'll only see the mock data.
 
 ## Prerequisites
 
