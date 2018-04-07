@@ -1,22 +1,24 @@
-<h2>Matching Customers</h2>
-<table>
-  <tr>
-    <th>User Id</th>
-    <th>Customer Name</th>
-    <th>Customer Distance</th>
-  </tr>
-  {{#each matchingCustomers as |customer|}}
+{{#if matchingCustomers}}
+  <h2>Matching Customers</h2>
+  <table id="matchingCustomers">
     <tr>
-      <td>{{customer.user_id}}</td>
-      <td>{{customer.name}}</td>
-      <td>{{customer.distance}}</td>
+      <th>User Id</th>
+      <th>Customer Name</th>
+      <th>Customer Distance</th>
     </tr>
-  {{/each}}
-</table>
+    {{#each matchingCustomers as |customer|}}
+      <tr>
+        <td>{{customer.user_id}}</td>
+        <td>{{customer.name}}</td>
+        <td>{{customer.distance}}</td>
+      </tr>
+    {{/each}}
+  </table>
+{{/if}}
 
 {{#if erroredCustomers}}
   <h3>Customers with location data errors</h3>
-  <table>
+  <table id="erroredCustomers">
     <tr>
       <th>User Id</th>
       <th>Customer Name</th>
