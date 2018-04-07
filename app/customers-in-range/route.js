@@ -11,7 +11,7 @@ export default Route.extend({
           transition.abort();
           this.transitionTo('index');
         }
-        return customers;
+        return customers.sortBy('user_id');
       });
   }
 });

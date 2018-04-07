@@ -19,8 +19,8 @@ module('Acceptance | customers in range', function(hooks) {
   test('successfully searching for customers', async function(assert) {
     this.server.get(ENV.customerURL, () => {
       return `
-        {"latitude": "1.1", "user_id": 1, "name": "Dave", "longitude": "-1.1"}
         {"latitude": "1.2", "user_id": 2, "name": "Bob", "longitude": "-1.2"}
+        {"latitude": "1.1", "user_id": 1, "name": "Dave", "longitude": "-1.1"}
       `.trim();
     });
 
