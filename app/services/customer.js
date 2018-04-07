@@ -11,16 +11,17 @@ export default Service.extend({
     return fetch(ENV.customerURL)
       .then(response => {
         if (response.ok) {
-          return response.text().then(text => {
-            try {
-              return JSON.parse(`[${text.split('\n').join(',')}]`);
-            }
-            catch(error) {
-              throw new Error(
-                `The customer list could not be parsed because of a formatting error:\n ${error.message}`
-              );
-            }
-          });
+          return response.text()
+            .then(text => {
+              try {
+                return JSON.parse(`[${text.split('\n').join(',')}]`);
+              }
+              catch(error) {
+                throw new Error(
+                  `The customer list could not be parsed because of a formatting error:\n ${error.message}`
+                );
+              }
+            });
         }
         throw new Error(
           'The customer list could not be fetched because of a network error, please try again'
