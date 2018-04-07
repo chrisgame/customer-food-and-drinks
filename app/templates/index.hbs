@@ -1,0 +1,23 @@
+<h1>Customer Finder</h1>
+<div>
+  <label for="venueLatitude">Venue Latitude</label>
+  {{input id="venueLatitude" value=venueLatitude}}
+</div>
+<div>
+  <label for="venueLongitude">Venue Longitude</label>
+  {{input id="venueLongitude" value=venueLongitude}}
+</div>
+<div>
+  <label for="customerRange">Customer Range</label>
+  {{input id="customerRange" value=range}}
+</div>
+<div>
+  {{#link-to "customers-in-range"
+    (query-params
+      range=range
+      venueLatitude=venueLatitude
+      venueLongitude=venueLongitude)
+  }}
+    Find
+  {{/link-to}}
+</div>

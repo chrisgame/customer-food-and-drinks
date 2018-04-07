@@ -6,6 +6,8 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     customerURL: 'https://gist.githubusercontent.com/brianw/19896c50afa89ad4dec3/raw/6c11047887a03483c50017c1d451667fd62a53ca/gistfile1.txt',
+    venueCoordinates: { latitude: 53.339428, longitude: -6.257664 },
+    customerRange: 100,
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
