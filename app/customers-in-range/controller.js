@@ -32,7 +32,7 @@ export default Controller.extend({
     return customer;
   }),
 
-  matchingCustomers: computed('customers', 'range', function(customer) {
+  matchingCustomers: computed('customers', 'range', function() {
     let customers = this.get('customers');
     let range = this.get('range');
 
